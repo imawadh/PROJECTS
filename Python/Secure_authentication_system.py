@@ -84,14 +84,19 @@ def user_id_verification(user_id):
     for i in range (len_user_id):
         character_verifier = ord(user_id[i])
         if (character_verifier>=97 and character_verifier<=122):
-            continue
+            flag = 1
         elif(character_verifier>= 65 and character_verifier<=90):
-            continue
+            flag = 1
         elif(character_verifier==95):
-            continue
+            flag = 1
         else:
-            print('Invalid User Id')
-            user_id_input()
+            flag = 0
+            break
+    if(flag == 1):
+        print("USER ID Verified SuccessFully !")
+    else:
+        print("PLEASE TRY AGAIN !")
+        user_id_input()
 
 
 
@@ -108,15 +113,12 @@ def user_id_input():
             print("TOO SMALL USER ID ")
     
     user_id_verification(user_id)
-    print("USER ID VERIFIED SUCCESSFULLY !")
+    
 
 #Calling of User id Input Fuction to take input and verication whether it is possible or not 
 user_id_input()
 
 print("Criteria for the Password :\nLower Case character should be atleast 2\nUpper Case character should be atleast 2\nSpecial Case character should be atleast 2\nDigit character should be atleast 2\nNo space is allowed")
-
-
-
 
 
 
