@@ -14,12 +14,12 @@ def input_password():
         if(len_password<10):
             print("TOO SMALL PASSWORD")
     
-    count(password)
+    password_verification(password)
 
 
 
 
-def count(password):
+def password_verification(password):
     # Initialising the count as 0 for counting the presence of character
     count_upper_case = 0
     count_lower_case = 0
@@ -76,6 +76,49 @@ def count(password):
             input_password()
 
 
+print("Criteria For User ID : \nIt must contain alphabets(UPPER or LOWER Case) or underscore only ")
+
+
+def user_id_verification(user_id):
+    len_user_id = len(user_id)
+    for i in range (len_user_id):
+        character_verifier = ord(user_id[i])
+        if (character_verifier>=97 and character_verifier<=122):
+            continue
+        elif(character_verifier>= 65 and character_verifier<=90):
+            continue
+        elif(character_verifier==95):
+            continue
+        else:
+            print('Invalid User Id')
+            user_id_input()
+
+
+
+
+def user_id_input():
+    user_id = input("Enter Your User ID : ")
+    len_user_id = len(user_id)
+    if(len_user_id<6):
+        print("TOO SMALL USER ID ")
+    while(len_user_id<6):
+        user_id = input("Enter Your User ID : ")
+        len_user_id = len(user_id)
+        if(len_user_id<6):
+            print("TOO SMALL USER ID ")
+    
+    user_id_verification(user_id)
+    print("USER ID VERIFIED SUCCESSFULLY !")
+
+#Calling of User id Input Fuction to take input and verication whether it is possible or not 
+user_id_input()
+
 print("Criteria for the Password :\nLower Case character should be atleast 2\nUpper Case character should be atleast 2\nSpecial Case character should be atleast 2\nDigit character should be atleast 2\nNo space is allowed")
 
+
+
+
+
+
+# Calling of Function to take input 
 input_password()
