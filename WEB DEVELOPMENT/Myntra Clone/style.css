@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    height: 56px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c8c8c8 ;
+    margin-bottom: 10px;
+    /* position:fixed;  */
+
+}
+.myntra_logo{
+    width: 50px;
+    height: 36px;   
+}
+
+.logo_container{
+    margin-left: 4%;
+}
+.action{
+    margin-right: 4%;
+}
+.navbar{
+    display: flex;
+    min-width: 515px;
+    justify-content: space-between;
+    text-decoration: none;
+    
+
+}
+.navbar a{
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar a sup{
+    color: #ff8585;
+    font-size: 10px;
+}
+
+.navbar a:hover{
+    color: #3131ff;
+    
+    /* text-decoration: underline; */
+    border-bottom: solid #000000;
+}
+.searchbar{
+    display: flex;
+    flex-grow: 0.3;
+    
+    
+}
+.icon{
+    padding: 3px;
+    border: 1px solid #141414;
+    border-radius:  3px 0px 0px 3px ;
+    border-right: none;
+    background-color: #f1f1f1;
+}
+.text-box{
+    display: flex;
+    flex-grow: 1;
+}
+.search{
+    border: 1px solid #141414;
+    border-left: none;
+    padding: 1px;
+    padding-bottom: 3px;
+    display: flex;
+    flex-grow: 1;
+    
+    background-color: #f1f1f1;
+    
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px ;
+
+    
+    
+}
+
+.action{
+    display: flex;
+    flex-grow: 0.2;
+    justify-content: space-between;
+}
+.bag , .wishlist , .profile{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #343434;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Section CSS*/
+.Banner-image{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+.category_heading{
+    text-transform: uppercase;
+}
+.heading_for_category{
+    padding: 20px;
+    color: #282c3f;
+    margin-left: 20px;
+}
+.category_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    
+}
+.category_items a img{
+    height: 200px;
+    width: 200px;
+}
+
+.category_shopping h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #282c3f;
+    padding: 40px;
+    margin-left: 20px;
+}
+.category_shopping a img{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+}
+.shop_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    background-color: #d2d2d2;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    
+}
+.block1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.online_shopping{
+    display: flex;
+    flex-direction: column;
+}
+
+.online_shopping a{
+    text-decoration: none;
+    color: #343434;
+}
+.customer_polices a{
+    text-decoration: none;
+    color: #343434;
+}
+.customer_polices{
+    display: flex;
+    flex-direction: column;
+}
+.footer_icons{
+    display: flex;
+    padding: 20px;
+
+}
+.playstore_icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10%;
+}
+.apple_app_store{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experience{
+    padding-bottom: 40px;
+}
+.stay_in_touch{
+    padding-top: 5px;
+}
+.stay_in_touch h3{
+    padding-bottom: 8px;
+}
+.useful_links{
+    margin-bottom: 20px;
+}
+.useful_links_link{
+    display: flex;
+    flex-direction: column;
+}
+.useful_links_link a{
+    text-decoration: none;
+    color: #343434;
+} 
+.popular_searches{
+    display: inline-block;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom div a{
+    text-decoration: none;
+    
+}
