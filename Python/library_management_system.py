@@ -7,11 +7,10 @@ books_in_the_library = {
 }
 
 
-# User database
+# User data about the book 
 users = {}
 
-# Transactions database
-transactions = []
+
 
 # Function to display books_in_the_library
 def display_books_in_the_library():
@@ -51,6 +50,9 @@ def Take_book():
     users[user_id]["books_checked_out"].append({"book_id": book_id, "Take_date": Take_date, "due_date": due_date})
     print(f"Book '{books_in_the_library[book_id]['title']}' checked out successfully. Due date: Day {due_date}")
     main_call()
+
+
+
 
 # Function for book return
 def return_book():
